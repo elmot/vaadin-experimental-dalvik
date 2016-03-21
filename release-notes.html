@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Vaadin Framework 7.6.3.experimental-dalvik</title>
+<title>Vaadin Framework 7.7.0.dalvik1</title>
 <link rel="stylesheet" type="text/css" href="css/styles.css" />
 
 <!--[if lte IE 6]>
@@ -28,42 +28,42 @@
     <div id="header">
         <h1>Vaadin &ndash; thinking of U and I</h1>
         <div id="version">
-            <strong>Version 7.6.3.experimental-dalvik</strong>
+            <strong>Version 7.7.0.dalvik1</strong>
         </div>
     </div>
     <!-- /header -->
 
     <div id="content">
-        <p>Version 7.6.3.experimental-dalvik built on 2016-02-24.</p>
+        <p>Version 7.7.0.dalvik1 built on 2016-03-14.</p>
 
         <h2 id="tableofcontents">Release Notes for Vaadin Framework
-            7.6.3.experimental-dalvik</h2>
+            7.7.0.dalvik1</h2>
         <ul>
             <li><a href="#overview">Overview of Vaadin
-                    7.6.3.experimental-dalvik Release</a></li>
+                    7.7.0.dalvik1 Release</a></li>
             <li><a href="#changelog">Change Log for Vaadin
-                    7.6.3.experimental-dalvik</a></li>
+                    7.7.0.dalvik1</a></li>
             <li><a href="#enhancements">Enhancements in Vaadin
-                    7.6</a></li>
+                    7.7</a></li>
             <li><a href="#incompatible">Incompatible or Behavior-altering Changes in
-                    7.6</a></li>
+                    7.7</a></li>
             <li><a href="#knownissues">Known Issues and Limitations</a></li>
             <li><a href="#vaadin">Vaadin Installation</a></li>
             <li><a href="#package">Package Contents</a></li>
             <li><a href="#migrating">Migrating from Vaadin 6</a></li>
-            <li><a href="#dependencies">Vaadin 7.6.3.experimental-dalvik
+            <li><a href="#dependencies">Vaadin 7.7.0.dalvik1
                     dependencies</a></li>
             <li><a href="#upgrading">Upgrading to Vaadin
-                    7.6</a></li>
+                    7.7</a></li>
             <li><a href="#supportedversions">Supported
                     Technologies</a></li>
             <li><a href="#vaadinontheweb">Vaadin on the Web</a></li>
         </ul>
 
-        <h2 id="overview">Overview of Vaadin 7.6.3.experimental-dalvik Release</h2>
+        <h2 id="overview">Overview of Vaadin 7.7.0.dalvik1 Release</h2>
 
         <p>
-            Vaadin 7.6.3.experimental-dalvik is a
+            Vaadin 7.7.0.dalvik1 is a
 <!--            feature release that includes --> 
             pre-release for evaluating
             a number of new features and bug fixes, as listed in the <a
@@ -72,7 +72,7 @@
         </p>
 
         <!-- ================================================================ -->
-        <h3 id="changelog">Change Log for Vaadin 7.6.3.experimental-dalvik</h3>
+        <h3 id="changelog">Change Log for Vaadin 7.7.0.dalvik1</h3>
 
         <p>This release includes the following closed issues:</p>
 
@@ -85,13 +85,13 @@
         <br/>
         <p>
             You can also view the <a
-                href="http://dev.vaadin.com/query?status=pending-release&status=released&resolution=fixed&milestone=Vaadin+7.6.3.experimental-dalvik&order=id">list
+                href="http://dev.vaadin.com/query?status=pending-release&status=released&resolution=fixed&milestone=Vaadin+7.7.0.dalvik1&order=id">list
                 of the closed issues</a> at the Vaadin developer's site.
         </p>
 
-        <h2 id="enhancements">Enhancements in Vaadin 7.6</h2>
+        <h2 id="enhancements">Enhancements in Vaadin 7.7</h2>
 
-        <p>Vaadin 7.6 includes many major and minor
+        <p>Vaadin 7.7 includes many major and minor
             enhancements. Below is a list of the most notable changes:</p>
 
         <ul>
@@ -120,7 +120,7 @@
                 Notes for Vaadin 7.5.0</a>.
         </p>
 
-        <h3 id="incompatible">Incompatible or Behavior-altering Changes in 7.6</h3>
+        <h3 id="incompatible">Incompatible or Behavior-altering Changes in 7.7</h3>
         <ul>
             <li>Window.setCloseShortcut() is now deprecated. ESCAPE is no longer a hard-coded default, but rather a soft one, and
                 can be removed. If the close-shortcut attribute of the v-windowelement is present, it must list all close
@@ -140,6 +140,10 @@
                 cause problems with external libraries compiled against said versions.</li>
             <li>Declarative format is now using "vaadin-" as a default prefix instead of the "v-" prefix used in 7.5. 
                 This default can be changed in deployment configuration.</li>
+            <li>The annotations @PreserveOnRefresh, @Push, @Theme, @Title, @VaadinServletConfiguration and @Widgetset now use
+                @Inherited. The annotation is also looked up in extended interfaces for backwards compatibility.</li>
+            <li>Server-side timings of request processing are only sent to the client when not in production mode. Using the
+                timings in TestBench tests requires the server not to be in production mode.</li>
         </ul>
         <h3 id="knownissues">Known Issues and Limitations</h3>
         <ul>
@@ -311,7 +315,7 @@
             for Vaadin 7 support.
         </p>
 
-        <h2 id="dependencies">Vaadin 7.6.3.experimental-dalvik Dependencies</h2>
+        <h2 id="dependencies">Vaadin 7.7.0.dalvik1 Dependencies</h2>
 
         <p>When using Maven, Ivy, Gradle, or other dependency
             management system, all Vaadin dependencies are downloaded
@@ -344,7 +348,7 @@
             directory of the web application that uses validation.
         </p>
 
-        <h2 id="upgrading">Upgrading to Vaadin 7.6</h2>
+        <h2 id="upgrading">Upgrading to Vaadin 7.7</h2>
 
         <p>When upgrading from an earlier Vaadin version, you must:
         </p>
@@ -449,7 +453,7 @@
         </p>
 
         <p>
-            Vaadin 7.6.3.experimental-dalvik supports the following <b>desktop browsers</b>:
+            Vaadin 7.7.0.dalvik1 supports the following <b>desktop browsers</b>:
         </p>
 
         <ul>
